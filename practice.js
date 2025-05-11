@@ -6,10 +6,10 @@ let myPromise = new Promise((resolve, reject) => {
         } else {
             reject("Operation Failed! ❌");
         }
-    }, 2000); // Simulating a 2-second delay
+    }, 2000);
 });
 
 myPromise
-    .then(result => console.log(result))  // Runs if resolved
-    .catch(error => console.error(error)) // Runs if rejected
-    .finally(() => console.log("Promise completed! 🎯")); // Always runs
+    .then(result => console.log(result)) 
+    .catch(error => console.error(error))
+    .finally(() => console.log("Promise completed! 🎯"));
